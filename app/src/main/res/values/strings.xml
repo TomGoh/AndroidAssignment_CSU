@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Forecast</string>
+    <string name="defaultDate">Today, Jan 1</string>
+    <string name="defaultHighTemperature">N/A</string>
+    <string name="defaultLowTemperature">N/A</string>
+    <string name="defaultDescription">N/A</string>
+    <string name="logo">Logo</string>
+    <string name="mainMenuLocation">Map Location</string>
+    <string name="mainMenuSettings">Settings</string>
+</resources>

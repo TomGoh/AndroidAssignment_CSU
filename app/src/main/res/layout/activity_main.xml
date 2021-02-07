@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:paddingBottom="22dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="50dp"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:id="@+id/top_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/top_left_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/defaultDate"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/top_left_high_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/defaultHighTemperature"
+                android:textSize="70sp"/>
+
+            <TextView
+                android:id="@+id/top_left_low_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="@string/defaultLowTemperature"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/top_right_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon999" />
+
+            <TextView
+                android:id="@+id/top_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:text="@string/defaultDescription" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</LinearLayout>
+

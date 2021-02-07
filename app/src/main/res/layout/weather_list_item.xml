@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/weather_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:src="@drawable/ic_clear"
+        android:contentDescription="@string/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weather_item_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tomorrow"
+            android:textSize="20sp"
+            android:textColor="@color/listGray"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/weather_item_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Clear"
+            android:textSize="15sp"
+            android:textColor="@color/listGray"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/weather_item_temp_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            tools:text="@string/defaultHighTemperature" />
+
+        <TextView
+            android:id="@+id/weather_item_temp_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/listGray"
+            android:textSize="14sp"
+            tools:text="@string/defaultLowTemperature" />
+
+    </LinearLayout>
+
+</RelativeLayout>
