@@ -12,3 +12,6 @@ Instructor: Xiang Yang
 4. 细节视图菜单中包含分享和setting选项，用户可以通过分享选项通过其他应用（邮 件、短信等）将天气详细信息分享给别人。
 5. 利用SQLite对天气预报数据进行持久化保存，如果网络不可用的情况下，从SQLite 中提取天气预报数据。
 6. Web API使用He Weather， https://www.heweather.com/documents/api/s6/weather-forecast
+
+
+Notes: Bugs with processing on the date value have not been handled yet, apps could collapse after launching.
